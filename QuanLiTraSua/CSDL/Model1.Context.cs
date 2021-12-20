@@ -13,10 +13,10 @@ namespace QuanLiTraSua.CSDL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuanLiTraSuaEntities3 : DbContext
+    public partial class QuanLiTraSuaEntities4 : DbContext
     {
-        public QuanLiTraSuaEntities3()
-            : base("name=QuanLiTraSuaEntities3")
+        public QuanLiTraSuaEntities4()
+            : base("name=QuanLiTraSuaEntities4")
         {
         }
     
@@ -30,7 +30,6 @@ namespace QuanLiTraSua.CSDL
         public virtual DbSet<HOADON> HOADONs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
         public virtual DbSet<SANPHAM> SANPHAMs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
     }
 }

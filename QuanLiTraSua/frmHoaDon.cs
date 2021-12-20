@@ -27,7 +27,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Số lượng", System.Type.GetType("System.Int32"));
             dt.Columns.Add("Size", System.Type.GetType("System.String"));
             dt.Columns.Add("Tổng tiền", System.Type.GetType("System.Decimal"));
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             SANPHAM sp = new SANPHAM();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             List<CTHD> listcthd = db.CTHDs.ToList();

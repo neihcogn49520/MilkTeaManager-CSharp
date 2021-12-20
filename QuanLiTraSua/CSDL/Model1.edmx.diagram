@@ -4,18 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a6b7324340824b25bbe3f0fba4496d9c" Name="Diagram1">
-        <EntityTypeShape EntityType="QuanLiTraSuaModel.BAN" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+      <Diagram DiagramId="3eacbdc9988244b9ae09a26e9bf7b9e7" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLiTraSuaModel.BAN" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLiTraSuaModel.CTHD" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLiTraSuaModel.HOADON" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTraSuaModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTraSuaModel.SANPHAM" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTraSuaModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTraSuaModel.TAIKHOAN" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLiTraSuaModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLiTraSuaModel.SANPHAM" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLiTraSuaModel.TAIKHOAN" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
         <AssociationConnector Association="QuanLiTraSuaModel.fk_BAN" ManuallyRouted="false" />
         <AssociationConnector Association="QuanLiTraSuaModel.fk_HOADON" ManuallyRouted="false" />
         <AssociationConnector Association="QuanLiTraSuaModel.fk_SANPHAM" ManuallyRouted="false" />
         <AssociationConnector Association="QuanLiTraSuaModel.fk_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLiTraSuaModel.fk_TKNV" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

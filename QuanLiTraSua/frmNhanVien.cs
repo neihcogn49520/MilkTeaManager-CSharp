@@ -42,7 +42,7 @@ namespace QuanLiTraSua
         void xuat()
         {
             dt.Clear();
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             List<NHANVIEN> listnv = db.NHANVIENs.ToList();
             txtID.Text = setID();
             foreach (var item in listnv)
@@ -69,7 +69,7 @@ namespace QuanLiTraSua
         }
         string setID()
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             countID = 1;
             foreach (var item in db.NHANVIENs.ToList())
             {
@@ -125,7 +125,7 @@ namespace QuanLiTraSua
                 {
                     try
                     {
-                        QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+                        QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
                         string a = del.Trim();
                         var delete = (from d in db.NHANVIENs where d.MaNV == a select d).Single();
                         db.NHANVIENs.Remove(delete);
@@ -160,7 +160,7 @@ namespace QuanLiTraSua
                 dt.Columns.Add("Ca làm", System.Type.GetType("System.String"));
                 dt.Columns.Add("Chức vụ", System.Type.GetType("System.String"));
 
-                QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+                QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
                 var timkiem = db.NHANVIENs.SqlQuery("select * from NHANVIEN where TenNV like '%" + txtTimKiem.Text + "%'").ToList();
                 foreach (var nv in timkiem)
                 {
@@ -179,7 +179,7 @@ namespace QuanLiTraSua
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             NHANVIEN nv = new NHANVIEN();
             List<NHANVIEN> listnv = db.NHANVIENs.ToList();
             string kt = "";
@@ -237,7 +237,7 @@ namespace QuanLiTraSua
 
             else
             {
-                QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+                QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
                 List<NHANVIEN> nv = db.NHANVIENs.ToList();
                 if (txtHoTen.Text == "") kt = kt + "Chưa nhập tên nhân viên\n";
                 if (txtSDT.Text == "") kt = kt + "Chưa nhập số điện thoại\n";
@@ -338,7 +338,7 @@ namespace QuanLiTraSua
 
         private void dgvTTNV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             List<TAIKHOAN> nv = db.TAIKHOANs.ToList();
             if (e.RowIndex >= 0)
             {

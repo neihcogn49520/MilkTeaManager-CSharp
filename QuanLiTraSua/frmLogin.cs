@@ -57,7 +57,7 @@ namespace QuanLiTraSua
 
         private void bt_login_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             List<TAIKHOAN> tk = db.TAIKHOANs.ToList();
             if (KiemTraDangNhap(txt_username.Text, txt_pass.Text))
             {
@@ -74,7 +74,7 @@ namespace QuanLiTraSua
 
         bool KiemTraDangNhap(string tentk, string mk)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             List<TAIKHOAN> tk = db.TAIKHOANs.ToList();
             foreach (var ip in tk)
             {

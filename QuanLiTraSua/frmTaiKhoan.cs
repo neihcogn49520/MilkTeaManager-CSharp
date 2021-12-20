@@ -29,7 +29,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Tên đăng nhập", System.Type.GetType("System.String"));
             dt.Columns.Add("Mật khẩu", System.Type.GetType("System.String"));
             dt.Columns.Add("Phân quyền", System.Type.GetType("System.String"));
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             List<TAIKHOAN> tk = db.TAIKHOANs.ToList();
             List<NHANVIEN> listnv = db.NHANVIENs.ToList();
             dt.Clear();
@@ -58,7 +58,7 @@ namespace QuanLiTraSua
         }
         string setID()
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             countID = 1;
             foreach (var item in db.TAIKHOANs.ToList())
             {
@@ -74,7 +74,7 @@ namespace QuanLiTraSua
 
         private void frmTaiKhoan_Load(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             List<TAIKHOAN> tk = db.TAIKHOANs.ToList();
             foreach(var t in tk)
             {
@@ -92,7 +92,7 @@ namespace QuanLiTraSua
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             TAIKHOAN tk = new TAIKHOAN();
             List<TAIKHOAN> listtk = db.TAIKHOANs.ToList();
             string kt = "";
@@ -131,7 +131,7 @@ namespace QuanLiTraSua
                 {
                     try
                     {
-                        QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+                        QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
                         string a = del.Trim();
                         var delete = (from d in db.TAIKHOANs where d.ID == a select d).Single();
                         db.TAIKHOANs.Remove(delete);
@@ -184,7 +184,7 @@ namespace QuanLiTraSua
 
             else
             {
-                QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+                QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
                 List<TAIKHOAN> nv = db.TAIKHOANs.ToList();
                 if (txtMK.Text == "") kt = kt + "Chưa nhập mật khẩu để sửa\n";
                 
