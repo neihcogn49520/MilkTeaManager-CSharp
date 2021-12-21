@@ -115,7 +115,7 @@ namespace QuanLiTraSua
 
         void loadProduct()
         {
-            using (QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3())
+            using (QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4())
             {
                 List<SANPHAM> sp = db.SANPHAMs.ToList();
                 List<HOADON> hd = db.HOADONs.ToList();
@@ -179,7 +179,7 @@ namespace QuanLiTraSua
 
         void loadRevenue()
         {
-            using (QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3())
+            using (QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4())
             {
                 List<HOADON> hd = db.HOADONs.ToList();
                 List<CTHD> cthd = db.CTHDs.ToList();

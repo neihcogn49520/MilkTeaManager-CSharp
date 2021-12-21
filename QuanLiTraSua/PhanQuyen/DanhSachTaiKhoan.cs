@@ -32,7 +32,7 @@ namespace QuanLiTraSua.PhanQuyen
         DanhSachTaiKhoan()
         {
             listTK = new List<TaiKhoan>();
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             TAIKHOAN tk = new TAIKHOAN();
             /*QLCHDMEntities1 db = new QLCHDMEntities1();
             List<C_user> listUser = db.C_user.ToList();

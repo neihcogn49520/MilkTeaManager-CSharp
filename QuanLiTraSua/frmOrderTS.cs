@@ -64,7 +64,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Số lượng", System.Type.GetType("System.Int32"));
             dt.Columns.Add("Size", System.Type.GetType("System.String"));
             dt.Columns.Add("Tổng tiền", System.Type.GetType("System.Decimal"));
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             SANPHAM sp = new SANPHAM();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             List<CTHD> listcthd = db.CTHDs.ToList();
@@ -132,7 +132,7 @@ namespace QuanLiTraSua
                 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             string tenmonan = "";
             int b = 0;
             foreach (var maban in db.CTHDs.ToList())
@@ -176,7 +176,7 @@ namespace QuanLiTraSua
             {
                 gettienkhachdua.tienkhachdua = Convert.ToDecimal(txtKhachDua.Text);
                 gettongtien.tongtien = Convert.ToDecimal(txtTongCong.Text);
-                QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+                QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
                 string tenmonan = "";
                 foreach (var mahang in db.CTHDs.ToList())
                 {
@@ -197,7 +197,7 @@ namespace QuanLiTraSua
         }
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             var chitiethoadon = db.CTHDs.ToList();
             CTHD cthd = new CTHD();
             string kt = "";
@@ -274,7 +274,7 @@ namespace QuanLiTraSua
         private void cbo_Menu_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbo_Size.Items.Clear();
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             foreach(var item in listsp)
             {
@@ -293,7 +293,7 @@ namespace QuanLiTraSua
 
         private void txtTongCong_Load(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             List<CTHD> listcthd = db.CTHDs.ToList();
             List<HOADON> listhd = db.HOADONs.ToList();
