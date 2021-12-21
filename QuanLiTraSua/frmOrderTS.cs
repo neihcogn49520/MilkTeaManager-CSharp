@@ -72,10 +72,11 @@ namespace QuanLiTraSua
             List<NHANVIEN> listnv = db.NHANVIENs.ToList();
             txtMaHD.Text = gethoadon.mahoadon;
             guna2TextBox1.Text = nv.manhanvien;
-            string test = "";
+            
             string n = "";
             foreach (var tensp in listsp)
             {
+                string test = "";
                 if (!test.Equals(tensp.TenMon))
                 {
                     test = tensp.TenMon;
@@ -95,7 +96,6 @@ namespace QuanLiTraSua
                 cbo_Menu.Items.Add(n);
             }
 
-
             int dem = 1;
             decimal sum = 0;
             string tenmon = "";
@@ -107,7 +107,6 @@ namespace QuanLiTraSua
                 {
                     foreach (var itm in listsp)
                     {
-                        
                         if (txtMaHD.Text.Equals(hd.MaHD) && hd.MaHD.Equals(item.MaHD))
                         {
                             if (item.MaMon.Equals(itm.MaMon))
@@ -115,7 +114,6 @@ namespace QuanLiTraSua
                                 tenmon = itm.TenMon;
                                 sum = itm.DonGia;
                                 decimal tongtien = (decimal)item.Soluong * sum;
-                                
                                 Thanhtien += tongtien;
                                 txtTongCong.Text = Convert.ToString(Thanhtien);
                                 dt.Rows.Add(new Object[] { dem, guna2TextBox1.Text , tenmon, item.Soluong, item.Size, tongtien });
@@ -125,7 +123,6 @@ namespace QuanLiTraSua
                         }
                     }
                 }
-                
             }
             dgvTTOrder.DataSource = dt;
         }
@@ -170,7 +167,7 @@ namespace QuanLiTraSua
 
             if (txtKhachDua.Text == "")
             {
-                MessageBox.Show("Vui lòn nhập tiền khách đưa trước khi in");
+                MessageBox.Show("Vui lòn nhập tiền khách đưa trước khi in!");
             }
             else
             {
@@ -188,11 +185,12 @@ namespace QuanLiTraSua
                             var update = (from u in db.SANPHAMs where u.MaMon == tenmonan select u).Single();
                             update.SL = Convert.ToInt32(update.SL - numSL.Value);
                             db.SaveChanges();
-                            m.Show();
-                            this.Hide();
+                            
                         }
                     }
                 }
+                m.Show();
+                this.Close();
             }
         }
         private void btnOrder_Click(object sender, EventArgs e)
@@ -237,7 +235,6 @@ namespace QuanLiTraSua
                             }
                         }
                     }
-                    
                     cthd.MaHD = gethoadon.mahoadon;
                     cthd.MaBan = b;
                     cthd.MaMon = tenmonan;
@@ -246,7 +243,6 @@ namespace QuanLiTraSua
                     cthd.DonGia = temp * Convert.ToInt32(numSL.Value);
                     db.CTHDs.Add(cthd);
                     db.SaveChanges();
-                    
                 }
                 catch
                 {

@@ -38,7 +38,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Tên món", System.Type.GetType("System.String"));
             dt.Columns.Add("Đơn giá", System.Type.GetType("System.Decimal"));
             dt.Columns.Add("Size", System.Type.GetType("System.String"));
-            dt.Columns.Add("Số lượng đã bán", System.Type.GetType("System.Int32"));
+            dt.Columns.Add("Số lượng", System.Type.GetType("System.Int32"));
 
             xuat();
         }
