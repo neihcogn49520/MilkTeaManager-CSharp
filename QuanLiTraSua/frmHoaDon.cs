@@ -27,7 +27,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Số lượng", System.Type.GetType("System.Int32"));
             dt.Columns.Add("Size", System.Type.GetType("System.String"));
             dt.Columns.Add("Tổng tiền", System.Type.GetType("System.Decimal"));
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             SANPHAM sp = new SANPHAM();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             List<CTHD> listcthd = db.CTHDs.ToList();
@@ -76,7 +76,10 @@ namespace QuanLiTraSua
 
         private void pic_back_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+            frmMenu m = new frmMenu();
+            m.Show();
+            this.Hide();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

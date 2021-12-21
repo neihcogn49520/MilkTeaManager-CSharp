@@ -64,7 +64,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Số lượng", System.Type.GetType("System.Int32"));
             dt.Columns.Add("Size", System.Type.GetType("System.String"));
             dt.Columns.Add("Tổng tiền", System.Type.GetType("System.Decimal"));
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             SANPHAM sp = new SANPHAM();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             List<CTHD> listcthd = db.CTHDs.ToList();
@@ -72,11 +72,10 @@ namespace QuanLiTraSua
             List<NHANVIEN> listnv = db.NHANVIENs.ToList();
             txtMaHD.Text = gethoadon.mahoadon;
             guna2TextBox1.Text = nv.manhanvien;
-            
+            string test = "";
             string n = "";
             foreach (var tensp in listsp)
             {
-                string test = "";
                 if (!test.Equals(tensp.TenMon))
                 {
                     test = tensp.TenMon;
@@ -96,6 +95,7 @@ namespace QuanLiTraSua
                 cbo_Menu.Items.Add(n);
             }
 
+
             int dem = 1;
             decimal sum = 0;
             string tenmon = "";
@@ -107,6 +107,7 @@ namespace QuanLiTraSua
                 {
                     foreach (var itm in listsp)
                     {
+                        
                         if (txtMaHD.Text.Equals(hd.MaHD) && hd.MaHD.Equals(item.MaHD))
                         {
                             if (item.MaMon.Equals(itm.MaMon))
@@ -114,6 +115,7 @@ namespace QuanLiTraSua
                                 tenmon = itm.TenMon;
                                 sum = itm.DonGia;
                                 decimal tongtien = (decimal)item.Soluong * sum;
+                                
                                 Thanhtien += tongtien;
                                 txtTongCong.Text = Convert.ToString(Thanhtien);
                                 dt.Rows.Add(new Object[] { dem, guna2TextBox1.Text , tenmon, item.Soluong, item.Size, tongtien });
@@ -123,13 +125,14 @@ namespace QuanLiTraSua
                         }
                     }
                 }
+                
             }
             dgvTTOrder.DataSource = dt;
         }
                 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             string tenmonan = "";
             int b = 0;
             foreach (var maban in db.CTHDs.ToList())
@@ -164,38 +167,30 @@ namespace QuanLiTraSua
         {
             frmHoaDon m = new frmHoaDon();
             gethoadon.mahoadon = txtMaHD.Text;
-
-            if (txtKhachDua.Text == "")
+            gettienkhachdua.tienkhachdua = Convert.ToDecimal(txtKhachDua.Text);
+            gettongtien.tongtien = Convert.ToDecimal(txtTongCong.Text);
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            string tenmonan="";
+            foreach (var mahang in db.CTHDs.ToList())
             {
-                MessageBox.Show("Vui lòn nhập tiền khách đưa trước khi in!");
-            }
-            else
-            {
-                gettienkhachdua.tienkhachdua = Convert.ToDecimal(txtKhachDua.Text);
-                gettongtien.tongtien = Convert.ToDecimal(txtTongCong.Text);
-                QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
-                string tenmonan = "";
-                foreach (var mahang in db.CTHDs.ToList())
+                foreach (var msp in db.SANPHAMs.ToList())
                 {
-                    foreach (var msp in db.SANPHAMs.ToList())
+                    if (mahang.MaMon.Equals(msp.MaMon))
                     {
-                        if (mahang.MaMon.Equals(msp.MaMon))
-                        {
-                            tenmonan = msp.MaMon;
-                            var update = (from u in db.SANPHAMs where u.MaMon == tenmonan select u).Single();
-                            update.SL = Convert.ToInt32(update.SL - numSL.Value);
-                            db.SaveChanges();
-                            
-                        }
+                        tenmonan = msp.MaMon;
+                        var update = (from u in db.SANPHAMs where u.MaMon == tenmonan select u).Single();
+                        update.SL = Convert.ToInt32(update.SL - numSL.Value);
+                        db.SaveChanges();
+                        m.Show();
                     }
                 }
-                m.Show();
-                this.Close();
             }
+            
+            this.Hide();
         }
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             var chitiethoadon = db.CTHDs.ToList();
             CTHD cthd = new CTHD();
             string kt = "";
@@ -235,6 +230,7 @@ namespace QuanLiTraSua
                             }
                         }
                     }
+                    
                     cthd.MaHD = gethoadon.mahoadon;
                     cthd.MaBan = b;
                     cthd.MaMon = tenmonan;
@@ -243,6 +239,7 @@ namespace QuanLiTraSua
                     cthd.DonGia = temp * Convert.ToInt32(numSL.Value);
                     db.CTHDs.Add(cthd);
                     db.SaveChanges();
+                    
                 }
                 catch
                 {
@@ -270,7 +267,7 @@ namespace QuanLiTraSua
         private void cbo_Menu_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbo_Size.Items.Clear();
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             foreach(var item in listsp)
             {
@@ -289,7 +286,7 @@ namespace QuanLiTraSua
 
         private void txtTongCong_Load(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             List<CTHD> listcthd = db.CTHDs.ToList();
             List<HOADON> listhd = db.HOADONs.ToList();

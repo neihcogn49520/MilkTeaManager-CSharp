@@ -38,7 +38,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Tên món", System.Type.GetType("System.String"));
             dt.Columns.Add("Đơn giá", System.Type.GetType("System.Decimal"));
             dt.Columns.Add("Size", System.Type.GetType("System.String"));
-            dt.Columns.Add("Số lượng", System.Type.GetType("System.Int32"));
+            dt.Columns.Add("Số lượng đã bán", System.Type.GetType("System.Int32"));
 
             xuat();
         }
@@ -46,7 +46,7 @@ namespace QuanLiTraSua
         void xuat()
         {
             dt.Clear();
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             txtMaMon.Text = setID();
             foreach (var item in listsp)
@@ -73,7 +73,7 @@ namespace QuanLiTraSua
         }
         string setID()
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             countID = 1;
             foreach (var item in db.SANPHAMs.ToList())
             {
@@ -102,7 +102,7 @@ namespace QuanLiTraSua
                 dt.Columns.Add("Đơn giá", System.Type.GetType("System.Decimal"));
                 dt.Columns.Add("Size", System.Type.GetType("System.String"));
                 dt.Columns.Add("Số lượng tồn", System.Type.GetType("System.Int32"));
-                QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+                QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
                 var timkiem = db.SANPHAMs.SqlQuery("select * from SANPHAM where TenMon like '%" + txtTimKiem.Text + "%'").ToList();
                 foreach (var sp in timkiem)
                 {
@@ -129,7 +129,7 @@ namespace QuanLiTraSua
 
             else
             {
-                QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+                QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
                 List<SANPHAM> nv = db.SANPHAMs.ToList();
                 if (txtTenMon.Text == "") kt = kt + "Chưa nhập tên món\n";
                 if (txtDonGia.Text == "") kt = kt + "Chưa nhập đơn giá\n";
@@ -154,7 +154,7 @@ namespace QuanLiTraSua
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             List<SANPHAM> listnv = db.SANPHAMs.ToList();
             string kt = "";
             if (txtTenMon.Text == "") kt = kt + "Chưa nhập tên món\n";
@@ -216,7 +216,7 @@ namespace QuanLiTraSua
                 {
                     if (del != "")
                     {
-                        QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+                        QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
                         string a = del.Trim();
                         var delete = (from d in db.SANPHAMs where d.MaMon == a select d).Single();
                         db.SANPHAMs.Remove(delete);

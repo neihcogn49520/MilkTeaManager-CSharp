@@ -15,7 +15,7 @@ namespace QuanLiTraSua
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmOrderTS());
+            Application.Run(new frm_Login());
         }
     }
 }

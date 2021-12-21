@@ -34,7 +34,7 @@ namespace QuanLiTraSua
         }
         string setID()
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             countID = 1;
             foreach (var item in db.HOADONs.ToList())
             {
@@ -48,7 +48,7 @@ namespace QuanLiTraSua
         }
         void themhd()
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             DateTime now = DateTime.Now;
             HOADON hd = new HOADON();
             hd.MaHD = setID();
@@ -89,13 +89,45 @@ namespace QuanLiTraSua
             frmMain main = new frmMain();
             main.Show();
             this.Hide();
-            
         }
 
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void bt_NhanVien_Click(object sender, EventArgs e)
+        {
+            frmNhanVien main = new frmNhanVien();
+            main.Show();
+            this.Hide();
+        }
+
+        private void bt_menu_Click(object sender, EventArgs e)
+        {
+            frmMenu main = new frmMenu();
+            main.Show();
+            this.Hide();
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            frmBaoCao main = new frmBaoCao();
+            main.Show();
+            this.Hide();
+        }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+            frmSanPham main = new frmSanPham();
+            main.Show();
+            this.Hide();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnMangVe_Click(object sender, EventArgs e)
