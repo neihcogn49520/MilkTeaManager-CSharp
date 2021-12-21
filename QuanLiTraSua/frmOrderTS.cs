@@ -64,7 +64,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Số lượng", System.Type.GetType("System.Int32"));
             dt.Columns.Add("Size", System.Type.GetType("System.String"));
             dt.Columns.Add("Tổng tiền", System.Type.GetType("System.Decimal"));
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             SANPHAM sp = new SANPHAM();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             List<CTHD> listcthd = db.CTHDs.ToList();
@@ -132,7 +132,7 @@ namespace QuanLiTraSua
                 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             string tenmonan = "";
             int b = 0;
             foreach (var maban in db.CTHDs.ToList())
@@ -167,30 +167,37 @@ namespace QuanLiTraSua
         {
             frmHoaDon m = new frmHoaDon();
             gethoadon.mahoadon = txtMaHD.Text;
-            gettienkhachdua.tienkhachdua = Convert.ToDecimal(txtKhachDua.Text);
-            gettongtien.tongtien = Convert.ToDecimal(txtTongCong.Text);
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
-            string tenmonan="";
-            foreach (var mahang in db.CTHDs.ToList())
+
+            if (txtKhachDua.Text == "")
             {
-                foreach (var msp in db.SANPHAMs.ToList())
+                MessageBox.Show("Vui lòn nhập tiền khách đưa trước khi in");
+            }
+            else
+            {
+                gettienkhachdua.tienkhachdua = Convert.ToDecimal(txtKhachDua.Text);
+                gettongtien.tongtien = Convert.ToDecimal(txtTongCong.Text);
+                QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+                string tenmonan = "";
+                foreach (var mahang in db.CTHDs.ToList())
                 {
-                    if (mahang.MaMon.Equals(msp.MaMon))
+                    foreach (var msp in db.SANPHAMs.ToList())
                     {
-                        tenmonan = msp.MaMon;
-                        var update = (from u in db.SANPHAMs where u.MaMon == tenmonan select u).Single();
-                        update.SL = Convert.ToInt32(update.SL - numSL.Value);
-                        db.SaveChanges();
-                        m.Show();
+                        if (mahang.MaMon.Equals(msp.MaMon))
+                        {
+                            tenmonan = msp.MaMon;
+                            var update = (from u in db.SANPHAMs where u.MaMon == tenmonan select u).Single();
+                            update.SL = Convert.ToInt32(update.SL - numSL.Value);
+                            db.SaveChanges();
+                            m.Show();
+                            this.Hide();
+                        }
                     }
                 }
             }
-            
-            this.Hide();
         }
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             var chitiethoadon = db.CTHDs.ToList();
             CTHD cthd = new CTHD();
             string kt = "";
@@ -267,7 +274,7 @@ namespace QuanLiTraSua
         private void cbo_Menu_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbo_Size.Items.Clear();
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             foreach(var item in listsp)
             {
@@ -286,7 +293,7 @@ namespace QuanLiTraSua
 
         private void txtTongCong_Load(object sender, EventArgs e)
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             List<SANPHAM> listsp = db.SANPHAMs.ToList();
             List<CTHD> listcthd = db.CTHDs.ToList();
             List<HOADON> listhd = db.HOADONs.ToList();

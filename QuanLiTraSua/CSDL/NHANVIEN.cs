@@ -18,7 +18,6 @@ namespace QuanLiTraSua.CSDL
         public NHANVIEN()
         {
             this.HOADONs = new HashSet<HOADON>();
-            this.TAIKHOANs = new HashSet<TAIKHOAN>();
         }
     
         public string MaNV { get; set; }
@@ -34,7 +33,5 @@ namespace QuanLiTraSua.CSDL
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADONs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TAIKHOAN> TAIKHOANs { get; set; }
     }
 }

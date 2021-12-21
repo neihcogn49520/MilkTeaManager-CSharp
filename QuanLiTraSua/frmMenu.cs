@@ -34,7 +34,7 @@ namespace QuanLiTraSua
         }
         string setID()
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             countID = 1;
             foreach (var item in db.HOADONs.ToList())
             {
@@ -48,7 +48,7 @@ namespace QuanLiTraSua
         }
         void themhd()
         {
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
             DateTime now = DateTime.Now;
             HOADON hd = new HOADON();
             hd.MaHD = setID();

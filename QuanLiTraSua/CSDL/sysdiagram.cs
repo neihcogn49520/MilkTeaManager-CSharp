@@ -12,11 +12,12 @@ namespace QuanLiTraSua.CSDL
     using System;
     using System.Collections.Generic;
     
-    public partial class TAIKHOAN
+    public partial class sysdiagram
     {
-        public string ID { get; set; }
-        public string MaNV { get; set; }
-        public string MK { get; set; }
-        public string PhanQuyen { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
