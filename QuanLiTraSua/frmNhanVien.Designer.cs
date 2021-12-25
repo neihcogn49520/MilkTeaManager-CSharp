@@ -258,10 +258,11 @@ namespace QuanLiTraSua
             this.dtpNgayVL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpNgayVL.Checked = true;
             this.dtpNgayVL.CheckedState.Parent = this.dtpNgayVL;
+            this.dtpNgayVL.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayVL.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
             this.dtpNgayVL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.dtpNgayVL.ForeColor = System.Drawing.Color.White;
-            this.dtpNgayVL.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayVL.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayVL.HoverState.Parent = this.dtpNgayVL;
             this.dtpNgayVL.Location = new System.Drawing.Point(766, 229);
             this.dtpNgayVL.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -453,7 +454,7 @@ namespace QuanLiTraSua
             this.rbtNu.ForeColor = System.Drawing.Color.White;
             this.rbtNu.Location = new System.Drawing.Point(767, 86);
             this.rbtNu.Name = "rbtNu";
-            this.rbtNu.Size = new System.Drawing.Size(59, 29);
+            this.rbtNu.Size = new System.Drawing.Size(61, 29);
             this.rbtNu.TabIndex = 46;
             this.rbtNu.TabStop = true;
             this.rbtNu.Text = "Nữ";
@@ -469,7 +470,7 @@ namespace QuanLiTraSua
             this.rbtNam.ForeColor = System.Drawing.Color.White;
             this.rbtNam.Location = new System.Drawing.Point(660, 86);
             this.rbtNam.Name = "rbtNam";
-            this.rbtNam.Size = new System.Drawing.Size(73, 29);
+            this.rbtNam.Size = new System.Drawing.Size(75, 29);
             this.rbtNam.TabIndex = 45;
             this.rbtNam.TabStop = true;
             this.rbtNam.Text = "Nam";
@@ -589,10 +590,11 @@ namespace QuanLiTraSua
             this.dtpNgaySinh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpNgaySinh.Checked = true;
             this.dtpNgaySinh.CheckedState.Parent = this.dtpNgaySinh;
+            this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
             this.dtpNgaySinh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
             this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.dtpNgaySinh.ForeColor = System.Drawing.Color.White;
-            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinh.HoverState.Parent = this.dtpNgaySinh;
             this.dtpNgaySinh.Location = new System.Drawing.Point(220, 180);
             this.dtpNgaySinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
