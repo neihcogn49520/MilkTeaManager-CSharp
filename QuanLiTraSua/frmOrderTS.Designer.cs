@@ -36,7 +36,7 @@ namespace QuanLiTraSua
             this.dtpNgayHD = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lb_Ngay = new System.Windows.Forms.Label();
             this.pan_TTOrder = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtIDNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.numSL = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cbo_Size = new System.Windows.Forms.ComboBox();
@@ -115,7 +115,8 @@ namespace QuanLiTraSua
             this.pan_TTOrder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pan_TTOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
-            this.pan_TTOrder.Controls.Add(this.guna2TextBox1);
+            this.pan_TTOrder.BorderColor = System.Drawing.Color.Silver;
+            this.pan_TTOrder.Controls.Add(this.txtIDNV);
             this.pan_TTOrder.Controls.Add(this.label8);
             this.pan_TTOrder.Controls.Add(this.numSL);
             this.pan_TTOrder.Controls.Add(this.cbo_Size);
@@ -136,42 +137,45 @@ namespace QuanLiTraSua
             this.pan_TTOrder.Controls.Add(this.label2);
             this.pan_TTOrder.Location = new System.Drawing.Point(23, 191);
             this.pan_TTOrder.Name = "pan_TTOrder";
+            this.pan_TTOrder.ShadowDecoration.Color = System.Drawing.Color.Silver;
+            this.pan_TTOrder.ShadowDecoration.Depth = 40;
             this.pan_TTOrder.ShadowDecoration.Parent = this.pan_TTOrder;
-            this.pan_TTOrder.Size = new System.Drawing.Size(1298, 330);
+            this.pan_TTOrder.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(12);
+            this.pan_TTOrder.Size = new System.Drawing.Size(1298, 319);
             this.pan_TTOrder.TabIndex = 1;
             // 
-            // guna2TextBox1
+            // txtIDNV
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(230, 83);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 29);
-            this.guna2TextBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox1.TabIndex = 69;
+            this.txtIDNV.BorderColor = System.Drawing.Color.White;
+            this.txtIDNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDNV.DefaultText = "";
+            this.txtIDNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDNV.DisabledState.Parent = this.txtIDNV;
+            this.txtIDNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
+            this.txtIDNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDNV.FocusedState.Parent = this.txtIDNV;
+            this.txtIDNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtIDNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDNV.HoverState.Parent = this.txtIDNV;
+            this.txtIDNV.Location = new System.Drawing.Point(230, 96);
+            this.txtIDNV.Name = "txtIDNV";
+            this.txtIDNV.PasswordChar = '\0';
+            this.txtIDNV.PlaceholderText = "";
+            this.txtIDNV.SelectedText = "";
+            this.txtIDNV.ShadowDecoration.Parent = this.txtIDNV;
+            this.txtIDNV.Size = new System.Drawing.Size(200, 29);
+            this.txtIDNV.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtIDNV.TabIndex = 69;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(72, 263);
+            this.label8.Location = new System.Drawing.Point(72, 243);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 28);
             this.label8.TabIndex = 66;
@@ -186,7 +190,7 @@ namespace QuanLiTraSua
             this.numSL.FocusedState.Parent = this.numSL;
             this.numSL.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.numSL.ForeColor = System.Drawing.Color.Black;
-            this.numSL.Location = new System.Drawing.Point(230, 263);
+            this.numSL.Location = new System.Drawing.Point(230, 241);
             this.numSL.Name = "numSL";
             this.numSL.ShadowDecoration.Parent = this.numSL;
             this.numSL.Size = new System.Drawing.Size(200, 32);
@@ -202,7 +206,7 @@ namespace QuanLiTraSua
             this.cbo_Size.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_Size.ForeColor = System.Drawing.Color.White;
             this.cbo_Size.FormattingEnabled = true;
-            this.cbo_Size.Location = new System.Drawing.Point(824, 30);
+            this.cbo_Size.Location = new System.Drawing.Point(824, 27);
             this.cbo_Size.Name = "cbo_Size";
             this.cbo_Size.Size = new System.Drawing.Size(200, 28);
             this.cbo_Size.TabIndex = 64;
@@ -214,7 +218,7 @@ namespace QuanLiTraSua
             this.cbo_Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_Menu.ForeColor = System.Drawing.Color.White;
             this.cbo_Menu.FormattingEnabled = true;
-            this.cbo_Menu.Location = new System.Drawing.Point(230, 202);
+            this.cbo_Menu.Location = new System.Drawing.Point(230, 169);
             this.cbo_Menu.Name = "cbo_Menu";
             this.cbo_Menu.Size = new System.Drawing.Size(200, 28);
             this.cbo_Menu.TabIndex = 63;
@@ -226,7 +230,7 @@ namespace QuanLiTraSua
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(683, 30);
+            this.label9.Location = new System.Drawing.Point(668, 27);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 28);
             this.label9.TabIndex = 61;
@@ -250,13 +254,13 @@ namespace QuanLiTraSua
             this.txtTienThua.ForeColor = System.Drawing.Color.White;
             this.txtTienThua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTienThua.HoverState.Parent = this.txtTienThua;
-            this.txtTienThua.Location = new System.Drawing.Point(824, 197);
+            this.txtTienThua.Location = new System.Drawing.Point(824, 241);
             this.txtTienThua.Name = "txtTienThua";
             this.txtTienThua.PasswordChar = '\0';
             this.txtTienThua.PlaceholderText = "";
             this.txtTienThua.SelectedText = "";
             this.txtTienThua.ShadowDecoration.Parent = this.txtTienThua;
-            this.txtTienThua.Size = new System.Drawing.Size(200, 29);
+            this.txtTienThua.Size = new System.Drawing.Size(200, 30);
             this.txtTienThua.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTienThua.TabIndex = 60;
             // 
@@ -265,7 +269,7 @@ namespace QuanLiTraSua
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(72, 198);
+            this.label1.Location = new System.Drawing.Point(72, 171);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 28);
             this.label1.TabIndex = 59;
@@ -287,7 +291,7 @@ namespace QuanLiTraSua
             this.btnOrder.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnOrder.ForeColor = System.Drawing.Color.White;
             this.btnOrder.HoverState.Parent = this.btnOrder;
-            this.btnOrder.Location = new System.Drawing.Point(1101, 206);
+            this.btnOrder.Location = new System.Drawing.Point(1101, 209);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.ShadowDecoration.Parent = this.btnOrder;
             this.btnOrder.Size = new System.Drawing.Size(127, 38);
@@ -312,7 +316,7 @@ namespace QuanLiTraSua
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.HoverState.Parent = this.btnXoa;
-            this.btnXoa.Location = new System.Drawing.Point(1101, 36);
+            this.btnXoa.Location = new System.Drawing.Point(1101, 57);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.ShadowDecoration.Parent = this.btnXoa;
             this.btnXoa.Size = new System.Drawing.Size(127, 38);
@@ -337,7 +341,7 @@ namespace QuanLiTraSua
             this.btnIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnIn.ForeColor = System.Drawing.Color.White;
             this.btnIn.HoverState.Parent = this.btnIn;
-            this.btnIn.Location = new System.Drawing.Point(1101, 121);
+            this.btnIn.Location = new System.Drawing.Point(1101, 133);
             this.btnIn.Name = "btnIn";
             this.btnIn.ShadowDecoration.Parent = this.btnIn;
             this.btnIn.Size = new System.Drawing.Size(127, 38);
@@ -364,13 +368,13 @@ namespace QuanLiTraSua
             this.txtKhachDua.ForeColor = System.Drawing.Color.White;
             this.txtKhachDua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtKhachDua.HoverState.Parent = this.txtKhachDua;
-            this.txtKhachDua.Location = new System.Drawing.Point(824, 140);
+            this.txtKhachDua.Location = new System.Drawing.Point(824, 169);
             this.txtKhachDua.Name = "txtKhachDua";
             this.txtKhachDua.PasswordChar = '\0';
             this.txtKhachDua.PlaceholderText = "";
             this.txtKhachDua.SelectedText = "";
             this.txtKhachDua.ShadowDecoration.Parent = this.txtKhachDua;
-            this.txtKhachDua.Size = new System.Drawing.Size(200, 29);
+            this.txtKhachDua.Size = new System.Drawing.Size(200, 28);
             this.txtKhachDua.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtKhachDua.TabIndex = 54;
             this.txtKhachDua.TextChanged += new System.EventHandler(this.txtKhachDua_TextChanged);
@@ -393,7 +397,7 @@ namespace QuanLiTraSua
             this.txtTongCong.ForeColor = System.Drawing.Color.White;
             this.txtTongCong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTongCong.HoverState.Parent = this.txtTongCong;
-            this.txtTongCong.Location = new System.Drawing.Point(824, 83);
+            this.txtTongCong.Location = new System.Drawing.Point(824, 96);
             this.txtTongCong.Name = "txtTongCong";
             this.txtTongCong.PasswordChar = '\0';
             this.txtTongCong.PlaceholderText = "";
@@ -410,7 +414,7 @@ namespace QuanLiTraSua
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(72, 84);
+            this.label7.Location = new System.Drawing.Point(72, 99);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 28);
             this.label7.TabIndex = 48;
@@ -459,7 +463,7 @@ namespace QuanLiTraSua
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(684, 201);
+            this.label4.Location = new System.Drawing.Point(667, 243);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 28);
             this.label4.TabIndex = 42;
@@ -471,7 +475,7 @@ namespace QuanLiTraSua
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(683, 144);
+            this.label3.Location = new System.Drawing.Point(667, 171);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 28);
             this.label3.TabIndex = 41;
@@ -483,7 +487,7 @@ namespace QuanLiTraSua
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(683, 87);
+            this.label2.Location = new System.Drawing.Point(668, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 28);
             this.label2.TabIndex = 40;
@@ -518,7 +522,7 @@ namespace QuanLiTraSua
             this.dgvTTOrder.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTTOrder.EnableHeadersVisualStyles = false;
             this.dgvTTOrder.GridColor = System.Drawing.Color.White;
-            this.dgvTTOrder.Location = new System.Drawing.Point(23, 541);
+            this.dgvTTOrder.Location = new System.Drawing.Point(23, 531);
             this.dgvTTOrder.Name = "dgvTTOrder";
             this.dgvTTOrder.RowHeadersVisible = false;
             this.dgvTTOrder.RowHeadersWidth = 51;
@@ -653,6 +657,6 @@ namespace QuanLiTraSua
         private Guna.UI2.WinForms.Guna2NumericUpDown numSL;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Panel panDrag;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtIDNV;
     }
 }

@@ -169,9 +169,7 @@ namespace QuanLiTraSua
 
         private void btnTroVe_Click(object sender, EventArgs e)
         {
-            frmNhanVien nv = new frmNhanVien();
-            nv.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

@@ -71,11 +71,12 @@ namespace QuanLiTraSua
             List<HOADON> listhd = db.HOADONs.ToList();
             List<NHANVIEN> listnv = db.NHANVIENs.ToList();
             txtMaHD.Text = gethoadon.mahoadon;
-            guna2TextBox1.Text = nv.manhanvien;
-            string test = "";
+            txtIDNV.Text = nv.manhanvien;
+            dtpNgayHD.Value = DateTime.Now;
             string n = "";
             foreach (var tensp in listsp)
             {
+                string test = "";
                 if (!test.Equals(tensp.TenMon))
                 {
                     test = tensp.TenMon;
@@ -118,7 +119,7 @@ namespace QuanLiTraSua
                                 
                                 Thanhtien += tongtien;
                                 txtTongCong.Text = Convert.ToString(Thanhtien);
-                                dt.Rows.Add(new Object[] { dem, guna2TextBox1.Text , tenmon, item.Soluong, item.Size, tongtien });
+                                dt.Rows.Add(new Object[] { dem, txtIDNV.Text , tenmon, item.Soluong, item.Size, tongtien });
                                 dem++;
                                 break;
                             }                            
@@ -128,6 +129,7 @@ namespace QuanLiTraSua
                 
             }
             dgvTTOrder.DataSource = dt;
+            numSL.Value = 0;
         }
                 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -167,33 +169,44 @@ namespace QuanLiTraSua
         {
             frmHoaDon m = new frmHoaDon();
             gethoadon.mahoadon = txtMaHD.Text;
-            gettienkhachdua.tienkhachdua = Convert.ToDecimal(txtKhachDua.Text);
-            gettongtien.tongtien = Convert.ToDecimal(txtTongCong.Text);
-            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
-            string tenmonan="";
-            foreach (var mahang in db.CTHDs.ToList())
+
+            if (txtKhachDua.Text == "")
             {
-                foreach (var msp in db.SANPHAMs.ToList())
+                MessageBox.Show("Vui lòn nhập tiền khách đưa trước khi in");
+            }
+            else
+            {
+                gettienkhachdua.tienkhachdua = Convert.ToDecimal(txtKhachDua.Text);
+                gettongtien.tongtien = Convert.ToDecimal(txtTongCong.Text);
+                QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
+                string tenmonan = "";
+                foreach (var mahang in db.CTHDs.ToList())
                 {
-                    if (mahang.MaMon.Equals(msp.MaMon))
+                    foreach (var msp in db.SANPHAMs.ToList())
                     {
-                        tenmonan = msp.MaMon;
-                        var update = (from u in db.SANPHAMs where u.MaMon == tenmonan select u).Single();
-                        update.SL = Convert.ToInt32(update.SL - numSL.Value);
-                        db.SaveChanges();
-                        m.Show();
+                        if (mahang.MaMon.Equals(msp.MaMon))
+                        {
+                            tenmonan = msp.MaMon;
+                            var update = (from u in db.SANPHAMs where u.MaMon == tenmonan select u).Single();
+                            update.SL = Convert.ToInt32(update.SL - numSL.Value);
+                            db.SaveChanges();
+                            m.Show();
+                            this.Close();
+                        }
                     }
                 }
+                
             }
-            
-            this.Hide();
         }
+
         private void btnOrder_Click(object sender, EventArgs e)
         {
             QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             var chitiethoadon = db.CTHDs.ToList();
             CTHD cthd = new CTHD();
             string kt = "";
+            if (cbo_Menu.Text == "") kt = kt + "vui lòng chọn tên sản phẩm\n";
+            if (numSL.Value == 0) kt = kt + "vui lòng nhập số lượng\n";
             if (kt != "")
             {
                 MessageBox.Show(kt);
@@ -202,44 +215,64 @@ namespace QuanLiTraSua
             {
                 try
                 {
-                    string tenmonan = "";
-                    int b = 0;
-                    cthd.MaHD = txtMaHD.Text;
-                    foreach (var maban in db.CTHDs.ToList())
+                    if (del != "")
                     {
-                        foreach (var tban in db.BANs.ToList())
+                        var update = (from u in db.CTHDs where u.MaHD == txtMaHD.Text && u.Size == cbo_Size.Text select u).Single();
+                        update.Soluong = Convert.ToInt32(numSL.Value);
+                        db.SaveChanges();
+                        del = "";
+                    }
+                    else
+                    {
+                        string tenmonan = "";
+                        int b = 0;
+                        cthd.MaHD = txtMaHD.Text;
+                        foreach (var maban in db.CTHDs.ToList())
                         {
-                            if (lb_ChangeBan.Text.Trim().Equals(tban.TenBan))
+                            foreach (var tban in db.BANs.ToList())
                             {
-                                b = tban.MaBan;
+                                if (lb_ChangeBan.Text.Trim().Equals(tban.TenBan))
+                                {
+                                    b = tban.MaBan;
+                                }
                             }
                         }
-                    }
-                    decimal temp = 0;
-                    foreach (var mahang in db.CTHDs.ToList())
-                    {
-                        foreach (var msp in db.SANPHAMs.ToList())
+                        decimal temp = 0;
+                        int s = 1;
+                        foreach (var mahang in db.CTHDs.ToList())
                         {
-                            if (mahang.MaMon.Equals(msp.MaMon))
+                            foreach (var msp in db.SANPHAMs.ToList())
                             {
-                                temp = msp.DonGia;
+                                if (mahang.MaMon.Equals(msp.MaMon))
+                                {
+                                    temp = msp.DonGia;
+                                }
+                                if (cbo_Menu.Text.Equals(msp.TenMon) && cbo_Size.Text.Equals(msp.Size))
+                                {
+                                    tenmonan = msp.MaMon;
+                                }
                             }
-                            if (cbo_Menu.Text.Equals(msp.TenMon) && cbo_Size.Text.Equals(msp.Size))
+                            if (txtMaHD.Text.Equals(mahang.MaHD) && tenmonan.Equals(mahang.MaMon) && cbo_Size.Text.Equals(mahang.Size))
                             {
-                                tenmonan = msp.MaMon;                                
+                                s = 0;
                             }
                         }
+                        if (s == 0)
+                        {
+                            MessageBox.Show("Sản phẩm này đã có trong chi tiết hóa đơn");
+                        }
+                        else
+                        {
+                            cthd.MaHD = gethoadon.mahoadon;
+                            cthd.MaBan = b;
+                            cthd.MaMon = tenmonan;
+                            cthd.Size = cbo_Size.Text;
+                            cthd.Soluong = Convert.ToInt32(numSL.Value);
+                            cthd.DonGia = temp * Convert.ToInt32(numSL.Value);
+                            db.CTHDs.Add(cthd);
+                            db.SaveChanges();
+                        }
                     }
-                    
-                    cthd.MaHD = gethoadon.mahoadon;
-                    cthd.MaBan = b;
-                    cthd.MaMon = tenmonan;
-                    cthd.Size = cbo_Size.Text;
-                    cthd.Soluong = Convert.ToInt32(numSL.Value);
-                    cthd.DonGia = temp * Convert.ToInt32(numSL.Value);
-                    db.CTHDs.Add(cthd);
-                    db.SaveChanges();
-                    
                 }
                 catch
                 {
@@ -330,7 +363,7 @@ namespace QuanLiTraSua
             {
                 DataGridViewRow dgv = dgvTTOrder.Rows[e.RowIndex];
                 txtMaHD.Text = gethoadon.mahoadon;
-                guna2TextBox1.Text = dgv.Cells[1].Value.ToString();
+                txtIDNV.Text = dgv.Cells[1].Value.ToString();
                 cbo_Menu.Text = dgv.Cells[3].Value.ToString();
                 numSL.Text = dgv.Cells[4].Value.ToString();
                 cbo_Size.Text = dgv.Cells[5].Value.ToString();

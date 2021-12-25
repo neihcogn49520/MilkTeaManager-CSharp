@@ -563,6 +563,26 @@ namespace QuanLiTraSua.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap milktea {
+            get {
+                object obj = ResourceManager.GetObject("milktea", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap milktea_xanh {
+            get {
+                object obj = ResourceManager.GetObject("milktea-xanh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MORRI_S_MENU {
             get {
                 object obj = ResourceManager.GetObject("MORRI\'S MENU", resourceCulture);
@@ -596,6 +616,16 @@ namespace QuanLiTraSua.Properties {
         internal static System.Drawing.Bitmap product_shape_ui_icon {
             get {
                 object obj = ResourceManager.GetObject("product_shape_ui_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report {
+            get {
+                object obj = ResourceManager.GetObject("report", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

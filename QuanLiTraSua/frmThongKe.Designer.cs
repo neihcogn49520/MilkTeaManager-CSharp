@@ -38,6 +38,7 @@ namespace QuanLiTraSua
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.LegendItem legendItem1 = new System.Windows.Forms.DataVisualization.Charting.LegendItem();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chartRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -56,6 +57,7 @@ namespace QuanLiTraSua
             this.chartRevenue.BorderSkin.BorderWidth = 3;
             this.chartRevenue.BorderSkin.PageColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
             chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.DimGray;
             chartArea1.AxisX.ScaleBreakStyle.BreakLineStyle = System.Windows.Forms.DataVisualization.Charting.BreakLineStyle.Straight;
             chartArea1.AxisX.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
             chartArea1.AxisX2.ScaleBreakStyle.BreakLineStyle = System.Windows.Forms.DataVisualization.Charting.BreakLineStyle.Straight;
@@ -65,6 +67,7 @@ namespace QuanLiTraSua
             chartArea1.AxisY.InterlacedColor = System.Drawing.Color.White;
             chartArea1.AxisY.IsLabelAutoFit = false;
             chartArea1.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
             customLabel2.ForeColor = System.Drawing.Color.Black;
             customLabel2.MarkColor = System.Drawing.Color.Black;
             chartArea1.AxisY2.CustomLabels.Add(customLabel2);
@@ -137,12 +140,19 @@ namespace QuanLiTraSua
             this.chartProduct.BorderSkin.BorderWidth = 3;
             this.chartProduct.BorderSkin.PageColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
             chartArea2.AxisX.IsLabelAutoFit = false;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
             chartArea2.AxisX.ScaleBreakStyle.BreakLineStyle = System.Windows.Forms.DataVisualization.Charting.BreakLineStyle.Straight;
             chartArea2.AxisX.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
             chartArea2.AxisX2.Crossing = -1.7976931348623157E+308D;
             chartArea2.AxisX2.IsLabelAutoFit = false;
+            chartArea2.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
             chartArea2.AxisX2.ScaleBreakStyle.BreakLineStyle = System.Windows.Forms.DataVisualization.Charting.BreakLineStyle.Straight;
+            chartArea2.AxisX2.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
             chartArea2.AxisX2.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+            chartArea2.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
             chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
             chartArea2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             chartArea2.BackImageTransparentColor = System.Drawing.Color.Transparent;
@@ -154,6 +164,8 @@ namespace QuanLiTraSua
             this.chartProduct.ChartAreas.Add(chartArea2);
             legend2.Alignment = System.Drawing.StringAlignment.Center;
             legend2.BackColor = System.Drawing.Color.Transparent;
+            legendItem1.Color = System.Drawing.Color.SteelBlue;
+            legend2.CustomItems.Add(legendItem1);
             legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
             legend2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             legend2.ForeColor = System.Drawing.Color.White;

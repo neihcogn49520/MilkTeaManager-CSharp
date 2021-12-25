@@ -114,6 +114,7 @@
     <Compile Include="CSDL\TAIKHOAN.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="CSDL\xuatHD.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +181,12 @@
     <Compile Include="frmThongKe.Designer.cs">
       <DependentUpon>frmThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXuatHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuatHD.Designer.cs">
+      <DependentUpon>frmXuatHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhanQuyen\Const.cs" />
     <Compile Include="PhanQuyen\DanhSachTaiKhoan.cs" />
     <Compile Include="PhanQuyen\PQ.cs" />
@@ -220,6 +227,9 @@
     <EmbeddedResource Include="frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmXuatHD.resx">
+      <DependentUpon>frmXuatHD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -230,6 +240,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="xuathd.rdlc" />
     <None Include="App.Config" />
     <EntityDeploy Include="CSDL\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -250,6 +261,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QuanLiTraSua.CSDL.xuatHD.datasource" />
     <None Include="Resources\tra-sua-tran-chau-duong-den.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -412,6 +424,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\report.png" />
+    <None Include="Resources\milktea.png" />
+    <None Include="Resources\milktea-xanh.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

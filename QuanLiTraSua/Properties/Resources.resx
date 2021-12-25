@@ -118,182 +118,41 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="5340287_man_people" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5340287_man_people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4230540_analysis_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4230540_analysis_graph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4801315_glass_magnifier_magnifying_search_searching_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4801315_glass_magnifier_magnifying_search_searching_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trasua2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trasua2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="b75aed176754af0af645-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\b75aed176754af0af645-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6351969_eye_key_look_password_security_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6351969_eye_key_look_password_security_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3209204_badge_card_employee_id_user_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3209204_badge_card_employee_id_user_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4781840_+_add_circle_create_expand_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4781840_+_add_circle_create_expand_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tra-sua-tran-chau-duong-den" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tra-sua-tran-chau-duong-den.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="b75aed176754af0af645-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\b75aed176754af0af645-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4230540_analysis_graph_report_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4230540_analysis_graph_report_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4115235_exit_logout_sign out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4115235_exit_logout_sign out_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MORRI'S MENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MORRI'S MENU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7787567_wrong_delete_remove_trash_minus_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7787567_wrong_delete_remove_trash_minus_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6590483_and_education_id_learning_pass_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6590483_and_education_id_learning_pass_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow back icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow back icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6351930_eye_password_see_view_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6351930_eye_password_see_view_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1564534_customer_man_user_account_profile_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1564534_customer_man_user_account_profile_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="103178_lock_security_password_secure_unlock_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\103178_lock_security_password_secure_unlock_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1303875_circle_minimize_minus_remove_close_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1303875_circle_minimize_minus_remove_close_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6646070_door_essentials_exit_ui_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6646070_door_essentials_exit_ui_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF MILKTEA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF MILKTEA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trasua" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trasua.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5eeea355389655.59822ff824b72" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5eeea355389655.59822ff824b72.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="milk tea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\milk tea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF MENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF MENU.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="z2872810026604_112e97c9a0fb54c8ba2a4973f2604841-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z2872810026604_112e97c9a0fb54c8ba2a4973f2604841-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="172546_search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\172546_search_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4829860_arrow_back_left_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4829860_arrow_back_left_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="z2928542429855_e1956ec47f6ce8b8e842f87ecbec3e9d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z2928542429855_e1956ec47f6ce8b8e842f87ecbec3e9d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6030234_beverage_boba_drink_milk tea_pearl_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6030234_beverage_boba_drink_milk tea_pearl_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="giphy (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\giphy (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_20211110_152348" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_20211110_152348.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3844442_dot_menu_more_vertical_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3844442_dot_menu_more_vertical_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="product_shape_ui_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\product_shape_ui_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1564535_customer_user_userphoto_account_person_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1564535_customer_user_userphoto_account_person_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4285e494cea303a1be4655ca68266ec11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4285e494cea303a1be4655ca68266ec11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3844442_dot_menu_more_vertical_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3844442_dot_menu_more_vertical_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="226591_add_circle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\226591_add_circle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4285e494cea303a1be4655ca68266ec11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4285e494cea303a1be4655ca68266ec11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="oie_trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oie_trans.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7787567_wrong_delete_remove_trash_minus_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7787567_wrong_delete_remove_trash_minus_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="172530_print_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\172530_print_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trasua1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trasua1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2638337_arrows_forward_right_sign_speed_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2638337_arrows_forward_right_sign_speed_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5340287_man_people_person_user_users_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5340287_man_people_person_user_users_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2931174_clipboard_copy_paste_analysis_report_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2931174_clipboard_copy_paste_analysis_report_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-afternoon-tea-poster-background-image_167153" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-afternoon-tea-poster-background-image_167153.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4829859_arrow_next_right_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4829859_arrow_next_right_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trasua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trasua.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4781839_cancel_circle_close_delete_discard_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4781839_cancel_circle_close_delete_discard_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="report_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\report_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="giphy (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2931178_change_edit_pencil_creative_design_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2931178_change_edit_pencil_creative_design_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1303875_circle_minimize_minus_remove_close_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1303875_circle_minimize_minus_remove_close_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="istockphoto-1132606352-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\istockphoto-1132606352-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="b75aed176754af0af645-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b75aed176754af0af645-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6351930_eye_password_see_view_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6351930_eye_password_see_view_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z2928542429855_e1956ec47f6ce8b8e842f87ecbec3e9d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z2928542429855_e1956ec47f6ce8b8e842f87ecbec3e9d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="milk tea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\milk tea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4285e494cea303a1be4655ca68266ec1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4285e494cea303a1be4655ca68266ec1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,16 +160,166 @@
   <data name="7830619_warehouse_storage_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7830619_warehouse_storage_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tra-sua-tran-chau-duong-den" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tra-sua-tran-chau-duong-den.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2931178_change_edit_pencil_creative_design_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2931178_change_edit_pencil_creative_design_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="4801315_glass_magnifier_magnifying_search_searching_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4801315_glass_magnifier_magnifying_search_searching_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oie_trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oie_trans.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4781840_+_add_circle_create_expand_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4781840_+_add_circle_create_expand_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="product_shape_ui_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product_shape_ui_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIF MILKTEA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF MILKTEA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="milktea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\milktea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6351969_eye_key_look_password_security_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6351969_eye_key_look_password_security_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trasua1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trasua1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_20211110_152348" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_20211110_152348.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="172546_search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\172546_search_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIF MENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF MENU.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z2872810026604_112e97c9a0fb54c8ba2a4973f2604841-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z2872810026604_112e97c9a0fb54c8ba2a4973f2604841-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-afternoon-tea-poster-background-image_167153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-afternoon-tea-poster-background-image_167153.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3209204_badge_card_employee_id_user_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3209204_badge_card_employee_id_user_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2931178_change_edit_pencil_creative_design_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2931178_change_edit_pencil_creative_design_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trasua2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trasua2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="226591_add_circle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\226591_add_circle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6646070_door_essentials_exit_ui_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6646070_door_essentials_exit_ui_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow back icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow back icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5eeea355389655.59822ff824b72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5eeea355389655.59822ff824b72.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="326518_arrow_back_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\326518_arrow_back_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="4829859_arrow_next_right_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4829859_arrow_next_right_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3844442_dot_menu_more_vertical_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3844442_dot_menu_more_vertical_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MORRI'S MENU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MORRI'S MENU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4230540_analysis_graph_report_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4230540_analysis_graph_report_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4115235_exit_logout_sign out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4115235_exit_logout_sign out_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gif thong ke" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gif thong ke.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="istockphoto-1132606352-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1132606352-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4829860_arrow_back_left_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4829860_arrow_back_left_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1564535_customer_user_userphoto_account_person_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1564535_customer_user_userphoto_account_person_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="172530_print_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\172530_print_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b75aed176754af0af645-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b75aed176754af0af645-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2931174_clipboard_copy_paste_analysis_report_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2931174_clipboard_copy_paste_analysis_report_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2638337_arrows_forward_right_sign_speed_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2638337_arrows_forward_right_sign_speed_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5340287_man_people_person_user_users_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5340287_man_people_person_user_users_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6030234_beverage_boba_drink_milk tea_pearl_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6030234_beverage_boba_drink_milk tea_pearl_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1564534_customer_man_user_account_profile_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1564534_customer_man_user_account_profile_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6590483_and_education_id_learning_pass_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6590483_and_education_id_learning_pass_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5340287_man_people" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5340287_man_people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="103178_lock_security_password_secure_unlock_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\103178_lock_security_password_secure_unlock_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4230540_analysis_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4230540_analysis_graph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3844442_dot_menu_more_vertical_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3844442_dot_menu_more_vertical_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="milktea-xanh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\milktea-xanh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

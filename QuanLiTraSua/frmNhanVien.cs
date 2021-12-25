@@ -35,7 +35,7 @@ namespace QuanLiTraSua
             dt.Columns.Add("Ngày vào làm", System.Type.GetType("System.DateTime"));
             dt.Columns.Add("Ca làm", System.Type.GetType("System.String"));
             dt.Columns.Add("Chức vụ", System.Type.GetType("System.String"));
-            dt.Columns.Add("money", System.Type.GetType("System.Decimal"));
+            dt.Columns.Add("Lương", System.Type.GetType("System.Decimal"));
             xuat();
         }
 

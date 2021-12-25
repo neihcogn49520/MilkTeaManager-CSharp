@@ -76,10 +76,7 @@ namespace QuanLiTraSua
 
         private void pic_back_Click(object sender, EventArgs e)
         {
-
-            frmMenu m = new frmMenu();
-            m.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

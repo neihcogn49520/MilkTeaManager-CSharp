@@ -64,7 +64,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban1.Text; 
+            main.Value = lb_ban1.Text; 
             main.Show();
             this.Hide();
         }
@@ -97,39 +97,6 @@ namespace QuanLiTraSua
            
         }
 
-        private void bt_NhanVien_Click(object sender, EventArgs e)
-        {
-            frmNhanVien main = new frmNhanVien();
-            main.Show();
-            this.Hide();
-        }
-
-        private void bt_menu_Click(object sender, EventArgs e)
-        {
-            frmMenu main = new frmMenu();
-            main.Show();
-            this.Hide();
-        }
-
-        private void btnBaoCao_Click(object sender, EventArgs e)
-        {
-            frmBaoCao main = new frmBaoCao();
-            main.Show();
-            this.Hide();
-        }
-
-        private void btnSanPham_Click(object sender, EventArgs e)
-        {
-            frmSanPham main = new frmSanPham();
-            main.Show();
-            this.Hide();
-        }
-
-        private void btnThongKe_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMangVe_Click(object sender, EventArgs e)
         {
             frmOrderTS main = new frmOrderTS();
@@ -143,7 +110,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban2.Text;
+            main.Value = lb_ban2.Text;
             main.Show();
             this.Hide();
         }
@@ -152,7 +119,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban3.Text;
+            main.Value = lb_ban3.Text;
             main.Show();
             this.Hide();
         }
@@ -161,7 +128,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban4.Text;
+            main.Value = lb_ban4.Text;
             main.Show();
             this.Hide();
         }
@@ -170,7 +137,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS();
             themhd();
-            main.Value = btn_ban5.Text;
+            main.Value = lb_ban5.Text;
             main.Show();
             this.Hide();
         }
@@ -179,7 +146,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban6.Text;
+            main.Value = lb_ban6.Text;
             main.Show();
             this.Hide();
         }
@@ -188,7 +155,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban7.Text;
+            main.Value = lb_ban7.Text;
             main.Show();
             this.Hide();
         }
@@ -197,7 +164,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban8.Text;
+            main.Value = lb_ban8.Text;
             main.Show();
             this.Hide();
         }
@@ -206,7 +173,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban9.Text;
+            main.Value = lb_ban9.Text;
             main.Show();
             this.Hide();
         }
@@ -215,7 +182,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban10.Text;
+            main.Value = lb_ban10.Text;
             main.Show();
             this.Hide();
         }
@@ -224,7 +191,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban11.Text;
+            main.Value = lb_ban11.Text;
             main.Show();
             this.Hide();
         }
@@ -233,7 +200,7 @@ namespace QuanLiTraSua
         {
             frmOrderTS main = new frmOrderTS(); 
             themhd();
-            main.Value = btn_ban12.Text;
+            main.Value = lb_ban12.Text;
             main.Show();
             this.Hide();
         }
