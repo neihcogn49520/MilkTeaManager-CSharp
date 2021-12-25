@@ -231,6 +231,10 @@ namespace QuanLiTraSua
                     string d = date.ToString("yyyy-dd-MM");
                     string s = d.Substring(8);
                     tdt.Add(new TongDoanhThu(s, tong));
+                    tdt.Sort((x, y) => {
+                        int ret = x.thang.CompareTo(y.thang);
+                        return ret != 0 ? ret : x.thang.CompareTo(y.thang);
+                    });
                 }
 
                 chartRevenue.DataSource = tdt;
