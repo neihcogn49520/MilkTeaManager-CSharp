@@ -111,9 +111,6 @@
     <Compile Include="CSDL\SANPHAM.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="CSDL\sysdiagram.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="CSDL\TAIKHOAN.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -429,5 +426,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

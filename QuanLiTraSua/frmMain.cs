@@ -85,7 +85,7 @@ namespace QuanLiTraSua
 
         void PhanQuyen()
         {
-            QuanLiTraSuaEntities3 db = new QuanLiTraSuaEntities3();
+            QuanLiTraSuaEntities4 db = new QuanLiTraSuaEntities4();
             switch (PQ.quyen)
             {
                 case "Quản lí kho":

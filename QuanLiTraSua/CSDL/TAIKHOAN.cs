@@ -18,5 +18,7 @@ namespace QuanLiTraSua.CSDL
         public string MaNV { get; set; }
         public string MK { get; set; }
         public string PhanQuyen { get; set; }
+    
+        public virtual NHANVIEN NHANVIEN { get; set; }
     }
 }
